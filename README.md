@@ -1,4 +1,4 @@
-# Hellotab
+# HelloTab
 Save and restore Chrome tabs
 
 ## How to use
