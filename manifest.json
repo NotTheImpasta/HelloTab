@@ -1,0 +1,16 @@
+{
+  "name": "Hellotab",
+  "description": "Save and restore Chrome tabs",
+  "version": "1.0",
+  "manifest_version": 3,
+  "permissions": [
+    "storage",
+    "tabs"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
