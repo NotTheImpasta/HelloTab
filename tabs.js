@@ -6,6 +6,10 @@ chrome.runtime.onMessage.addListener(
         sendResponse(true);
         const container = document.getElementById("tabs");
         console.log(tabs);
+        if (tabs == undefined) {
+            container.innerHTML += `<li>No tabs found.</li>`
+            return;
+        }
         tabs.forEach(tab => {
             console.log(tab);
             container.innerHTML += `<li><strong>${tab.title}</strong>: <a href='${tab.url || ''}'>${tab.url || '(no url)'}</a></li>`;
